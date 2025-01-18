@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,23 +84,52 @@
         .popup button.update:hover {
             background-color: darkred;
         }
+
         @media (max-width: 400px) {
             .popup {
                 height: 100vh;
+                position: fixed;
+            }
+            .popup img{
+                padding-top: 15px;
+            }
+            .buttons {
+                margin: 25px;
+            }
+            h1, p{
+                padding: 0 25px;
+            }
+        }
+        @media (max-width: 364px) {
+            .popup{
+                position: fixed;
+            }
+            .buttons {
+                font-size: 15px;
+                padding: 0 30px;
+            }
+            h1, p{
+                font-size: 10px;
+                padding: 0 40px;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="popup">
-        <img src="https://clickynext.com/spam_shield/blocker/47514_lands_v3/cleaner-update_p1_2-nopush/images/warning_icon.png" alt="">
+        <img src="https://clickynext.com/spam_shield/blocker/47514_lands_v3/cleaner-update_p1_2-nopush/images/warning_icon.png"
+            alt="">
         <h1>WARNING! UPDATE FOR ANDROID IS RECOMMENDED!</h1>
-        <p>Your phone <strong>undefined</strong> can work faster. We released an update, and it is recommended for every phone.</p>
-        <p>If you do not upgrade, your <strong>undefined</strong> might be slowed down and your battery may discharge quickly.</p>
+        <p>Your phone <strong>undefined</strong> can work faster. We released an update, and it is recommended for every
+            phone.</p>
+        <p>If you do not upgrade, your <strong>undefined</strong> might be slowed down and your battery may discharge
+            quickly.</p>
         <p>Update now for <span style="color: yellow;">FREE</span> to clean and boost your Android immediately!</p>
         <div class="timer">00 min 30 sec</div>
         <div class="android-icon">
-            <img src="https://clickynext.com/spam_shield/blocker/47514_lands_v3/cleaner-update_p1_2-nopush/images/android.png" alt="Android Icon">
+            <img src="https://clickynext.com/spam_shield/blocker/47514_lands_v3/cleaner-update_p1_2-nopush/images/android.png"
+                alt="Android Icon">
         </div>
         <div class="buttons">
             <a href="important.html"><button class="cancel">Cancel</button></a>
@@ -108,4 +138,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
