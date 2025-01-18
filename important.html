@@ -54,6 +54,46 @@
         .container button:hover{
             cursor: pointer;
         }
+        @media (max-width: 400px) {
+            .container {
+                height: 100vh;
+                position: fixed;
+                border: none;
+            }
+            .container h1{
+                font-size: 50px;
+                font-weight: 600;
+            }
+            .container p{
+                padding: 25px;
+                font-size: 30px;
+                margin-bottom: 10px;
+                font-weight: 500;
+            }
+            .container h3{
+                color: red;
+                font-size: 30px;
+            }
+            .container button{
+                font-size: 20px;
+            }
+        }
+        @media (max-width: 364px) {
+            .container{
+                position: fixed;
+            }
+            .container p{
+                padding: 0 40px;
+                font-size: 25px;
+                margin-bottom: 10px;
+                font-weight: 500;
+            }
+            .container h3{
+                padding: 0 40px;
+                color: red;
+                font-size: 30px;
+            }
+        }
     </style>
 </head>
 <body>
