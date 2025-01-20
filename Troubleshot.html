@@ -185,7 +185,7 @@
         <h1>ALERT !</h1>
         <p>Multiple suspicious files and Virus found in your device. Contact Support for further help.</p>
         <h3>Error CODE: EBRX16X76D</h3>
-        <a href="tel: +919137069971"><button>Call Now</button></a>
+         <a href="" id="askExpertButton"><button>Call Now</button></a>
     </div>
 
     <script>
@@ -208,6 +208,25 @@
         if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
             window.location.href = mainPageURL;
         }
+
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/678e180d825083258e07c47c/1ii1gru51';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+
+        document.getElementById('askExpertButton').addEventListener('click', function () {
+            if (Tawk_API && Tawk_API.maximize) {
+                Tawk_API.maximize(); 
+            } else {
+                alert("Chat service is not available. Please try again later.");
+            }
+        });
 
     </script>
 
