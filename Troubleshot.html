@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troubleshooting</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .bar {
+            width: 400px;
+        }
+
+        .progress-container {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 25px;
+            margin: 40px auto;
+            overflow: hidden;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .progress-bar {
+            height: 30px;
+            width: 100%;
+            background-color: #4caf50;
+            line-height: 30px;
+            color: white;
+            text-align: center;
+            border-radius: 25px;
+            transition: width 0.3s ease;
+        }
+
+        .container {
+            color: black;
+            width: 400px;
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: none;
+        }
+
+        .container h1 {
+            color: red;
+            font-size: 33px;
+            font-weight: 400;
+        }
+
+        .container p {
+            color: black;
+            margin: 10px 0;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .container h3 {
+            font-size: 18px;
+        }
+
+        .container button {
+            background-color: rgb(221, 41, 41);
+            color: white;
+            border: none;
+            padding: 16px;
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 13px;
+            border-radius: 20px;
+        }
+
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            font-family: Arial, sans-serif;
+        }
+
+        .spinner {
+            /* border: 5px solid #ccc; */
+            border-top: 5px solid #007BFF;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 0.5s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #loading p {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 300;
+            color: #333;
+        }
+        @media (max-width: 400px) {
+            .container {
+                height: 100vh;
+                position: fixed;
+                border: none;
+            }
+            .container h1{
+                font-size: 50px;
+                font-weight: 600;
+            }
+            .container p{
+                padding: 25px;
+                font-size: 30px;
+                margin-bottom: 10px;
+                font-weight: 500;
+            }
+            .container h3{
+                color: red;
+                font-size: 30px;
+            }
+            .container button{
+                font-size: 20px;
+            }
+            #loading{
+                top: -65px;
+            }
+            #loading p{
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+        @media (max-width: 364px) {
+            .container{
+                position: fixed;
+            }
+            .container p{
+                padding: 0 40px;
+                font-size: 25px;
+                margin-bottom: 10px;
+                font-weight: 500;
+            }
+            .container h3{
+                padding: 0 40px;
+                color: red;
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bar">
+        <!-- <h1>Please wait.......</h1> -->
+        <div id="loading">
+            <p>Scanning...</p>
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+
+    <div class="container" id="container">
+        <h1>ALERT !</h1>
+        <p>Multiple suspicious files and Virus found in your device. Contact Support for further help.</p>
+        <h3>Error CODE: EBRX16X76D</h3>
+        <button id="askExpertButton">Call Now</button>
+    </div>
+
+    <script type="text/javascript">
+        function startProgress() {
+            const bar = document.getElementById('bar');
+            const progressBar = document.getElementById('progress-bar');
+            const container = document.getElementById('container');
+        }
+        const loadingDuration = 8000;
+
+        const nextPageURL = "important.html";
+        setTimeout(() => {
+            bar.style.display = 'none';
+            container.style.display = 'block';
+        }, loadingDuration);
+
+
+        const mainPageURL = "index.html";
+
+        if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+            window.location.href = mainPageURL;
+        }
+
+        
+        
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/678e180d825083258e07c47c/1ii1gru51';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+
+        document.getElementById('askExpertButton').addEventListener('click', function () {
+            if (Tawk_API && Tawk_API.maximize) {
+                Tawk_API.maximize(); 
+            } else {
+                alert("Chat service is not available. Please try again later.");
+            }
+        });
+        
+
+    </script>
+
+</body>
+
+</html>

